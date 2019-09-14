@@ -1,0 +1,38 @@
+Spring:
+  profiles:
+    active: qa
+
+---
+Spring:
+  profiles: dev
+server:
+  port: 9090
+
+default:
+  course:
+    name: OOP
+    chapterCount: 10
+
+course:
+  name: Spring Boot & Spring MVC
+  chapterCount: 15
+  rating: 5
+  author: sheikhafsar
+
+---
+Spring:
+  profiles: qa
+server:
+  port: 9191
+
+default:
+  course:
+    name: OOP_
+    chapterCount: 10_
+
+course:
+  name: Spring Boot & Spring MVC_
+  chapterCount: 15_
+  rating: 5_
+  author: sheikhafsar_
+
